@@ -24,8 +24,8 @@ function sort_time_data() {
     let seconds = divmod(minutes[1], 1);
     let milliseconds = divmod(seconds[1], .001);
 
-    document.getElementById("test1").innerHTML = days[0] + ' days, ' + hours[0] + ' hours, ' 
-    + minutes[0] + ' minutes, ' + seconds[0] + ' seconds and ' + milliseconds[0] + ' milliseconds';
+    document.getElementById("test1").innerHTML = days[0] + ' Days, ' + hours[0] + ' Hours, ' 
+    + minutes[0] + ' Minutes, ' + seconds[0] + ' Seconds and ' + milliseconds[0] + ' Milliseconds';
 }
 
 function divmod(x, y){
