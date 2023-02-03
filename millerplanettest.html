@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Miller's Planet</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<style>
+  body {
+    background: url(bkgrnd.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .centermaincontent {
+
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+
+  }
+
+  .centersubcontent {
+    position:relative;
+    top: -200px;
+  }
+
+  .logoimg {
+    /*
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    */
+    position: relative;
+    top: -340px;
+  }
+
+  .lowersubcontent {
+    position: relative;
+    top: -275px;
+  }
+
+  .bgblurimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: .25;
+    filter: blur(5px);
+  }
+</style>
+
+<body>
+  <!--<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Miller's Planet</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+-->
+  <main>
+    <div class="bgblurimg">
+      <img src="blurbox.png" alt="bg" width="1300" height="400">
+    </div>
+    <div class="centermaincontent">
+    <body onload="looper()">
+        <h1 id="test1" style="text-align: center; color:white; font-size: xxx-large;"></h1>
+    </body>
+      <div class="centersubcontent">
+      <body>
+        <h1 style="text-align: center; color:whitesmoke; font-size: xx-large;">Since the release of</h1>
+      </body>
+      </div>
+      <div class="logoimg">
+        <img src="logo.png" alt="interstellar logo" width="588" height="250">
+      </div>
+      <div class="lowersubcontent">
+        <body>
+          <h1 style="text-align: center; color:whitesmoke; font-size: xx-large;">have passed on Miller's planet</h1>
+        </body>
+      </div>
+    </div>
+    <script src="Millertime.js"></script>
+  </main>
+  <footer>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>
