@@ -56,6 +56,15 @@
     opacity: .25;
     filter: blur(5px);
   }
+
+  .realtime {
+    position: absolute;
+    width: 100%;
+    margin-right: -50px;
+    bottom: 5%;
+    text-align: center;
+    font-size: medium;
+  }
 </style>
 
 <body>
@@ -75,12 +84,17 @@
   </header>
 -->
   <main>
+    <div class="realtime">
+      <body onload="looperrealtime(), looper()">
+        <h1 id="realtime" style="color: whitesmoke;"></h1>
+      </body>
+    </div>
     <div class="bgblurimg">
       <img src="blurbox.png" alt="bg" width="1650" height="400">
     </div>
     <div class="centermaincontent">
-    <body onload="looper()">
-        <h1 id="test1" style="text-align: center; color:whitesmoke; font-size: 47pt;"></h1>
+    <body>
+        <h1 id="millertime" style="text-align: center; color:whitesmoke; font-size: 40pt;"></h1>
     </body>
       <div class="centersubcontent">
       <body>
@@ -89,7 +103,7 @@
       </div>
       <div class="logoimg">
         <img src="logo.png" alt="interstellar logo" width="588" height="250">
-      </div>
+      </div> 
       <div class="lowersubcontent">
         <body>
           <h1 style="text-align: center; color:whitesmoke; font-size: xx-large;">have passed on Miller's planet</h1>

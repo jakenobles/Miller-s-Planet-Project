@@ -17,14 +17,13 @@ function get_time() {
 
 function sort_time_data() {
 
-
     let days = divmod(get_time(), 86400);
     let hours   = divmod(days[1], 3600);
     let minutes = divmod(hours[1], 60);
     let seconds = divmod(minutes[1], 1);
     let milliseconds = divmod(seconds[1], .001);
 
-    document.getElementById("test1").innerHTML = days[0] + ' Days, ' + hours[0] + ' Hours, ' 
+    document.getElementById("millertime").innerHTML = days[0] + ' Days, ' + hours[0] + ' Hours, ' 
     + minutes[0] + ' Minutes, ' + seconds[0] + ' Seconds and ' + milliseconds[0] + ' Milliseconds';
 }
 
@@ -38,4 +37,34 @@ function divmod(x, y){
 
 function looper() {
     setInterval(sort_time_data, 500);
+}
+
+function looperrealtime() {
+    setInterval(sort_real_time, 1);
+}
+
+function realtime() {
+    const millerlanding = new Date(2014, 9, 26, 0, 0, 0);
+    
+    const currenttime = new Date();
+
+    // remember that this is in units of milliseconds
+    const time_passed = currenttime - millerlanding;
+
+    const seconds_passed = time_passed / 1000;
+
+    return seconds_passed;
+
+}
+
+function sort_real_time() {
+    let years = divmod(realtime(), 3.154e+7)
+    let days = divmod(years[1], 86400);
+    let hours   = divmod(days[1], 3600);
+    let minutes = divmod(hours[1], 60);
+    let seconds = divmod(minutes[1], 1);
+    let milliseconds = divmod(seconds[1], .001);
+
+    document.getElementById("realtime").innerHTML = years[0] + ' Years ' + days[0] + ' Days, ' + hours[0] + ' Hours, ' 
+    + minutes[0] + ' Minutes, ' + seconds[0] + ' Seconds and ' + milliseconds[0] + ' Milliseconds';
 }
