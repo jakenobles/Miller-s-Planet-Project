@@ -40,7 +40,7 @@ function looper() {
 }
 
 function looperrealtime() {
-    setInterval(sort_real_time, 1);
+    setInterval(sort_real_time, 1000);
 }
 
 function realtime() {
@@ -63,8 +63,7 @@ function sort_real_time() {
     let hours   = divmod(days[1], 3600);
     let minutes = divmod(hours[1], 60);
     let seconds = divmod(minutes[1], 1);
-    let milliseconds = divmod(seconds[1], .001);
 
     document.getElementById("realtime").innerHTML = years[0] + ' Years ' + days[0] + ' Days, ' + hours[0] + ' Hours, ' 
-    + minutes[0] + ' Minutes, ' + seconds[0] + ' Seconds and ' + milliseconds[0] + ' Milliseconds';
+    + minutes[0] + ' Minutes and ' + seconds[0] + ' Seconds';
 }
