@@ -50,8 +50,7 @@ function realtime() {
 }
 
 function sort_real_time() {
-    let years = divmod(realtime(), );
-    let days = divmod(days[1], 86400);
+    let days = divmod(realtime(), 86400);
     let hours   = divmod(days[1], 3600);
     let minutes = divmod(hours[1], 60);
     let seconds = divmod(minutes[1], 1);
