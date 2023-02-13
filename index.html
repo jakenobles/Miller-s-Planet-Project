@@ -81,11 +81,9 @@
   }
 
   .accordionpos {
-    position: relative;
-    bottom: -30px;
-    width: 300px;
-    left: 50%;
-    margin-left: -150px;
+    display: block;
+    top: 50vh;
+    width: 500px;
 
   }
 </style>
@@ -142,17 +140,30 @@
         <body>
           <h1 style="text-align: center; color:whitesmoke; font-size: xx-large;">have passed on Miller's planet</h1>
         </body>
-         <!--Accordion-->
+        <!--Accordion-->
         <div class="accordion accordionpos" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                How does this work?
+                Which one was Miller's Planet again?
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <!--Embedded Youtube Video-->
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/DB8i1kyXkWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How does time dilation work?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>The time difference between Earth and Miller's Planet is about 1 Miller hour = 7 Earth years.</strong> Time dilation refers to the difference in the elapsed time measured by two observers, due to a relative velocity difference between them or by being differently situated relative to a gravitational field. In the context of planets, the difference in gravitational potential at different points in a gravitational field can lead to differences in the passage of time. For example, time passes slower for an object closer to a massive planet than for an object farther away, due to the stronger gravitational pull experienced by the former. This effect is known as gravitational time dilation and is a consequence of Einstein's theory of general relativity.
               </div>
             </div>
           </div>
